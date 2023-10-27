@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>property enumeration</title>
+</head>
+<body>
+    
+    <script>
+        let obj = {
+            a: 10,
+            b: "txt",
+            printData: function() {
+                console.log("Hello!");
+            },
+            arr: [1,2,3]
+        };
+
+        // enumeration
+        for (const prop in obj) {
+            if (obj.hasOwnProperty(prop)) {
+                console.log(prop, obj[prop]);
+            }
+        }
+    </script>
+</body>
+</html>
